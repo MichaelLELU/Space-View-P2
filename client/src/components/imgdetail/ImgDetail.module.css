@@ -50,7 +50,7 @@
 .detailsbutton:hover {
   background-color: #ffffff29;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1100px) {
   .container {
     align-self: center;
     width: 400px;
