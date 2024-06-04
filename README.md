@@ -4,7 +4,7 @@ For our second project at the Wild Code School, we created an image gallery usin
 #
 
  Link to: https://space-view-p2-michael-l.vercel.app/
-
+#
 
 
 # 💻 Tech Stack:
