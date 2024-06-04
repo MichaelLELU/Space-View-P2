@@ -1,4 +1,8 @@
 # 💫 About:
+
+For our second project at the Wild Code School, we created an image gallery using the NASA API. This gallery is accessible to everyone, featuring categories and a search bar that allow users to explore space. We worked in a team of four, employing the Agile methodology to develop the project. The entire project was completed in three weeks.
+#
+
  Link to: https://space-view-p2-michael-l.vercel.app/
 
 
