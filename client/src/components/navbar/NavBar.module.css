@@ -73,7 +73,7 @@ ul:hover li:hover ~ li:before {
   width: 100%;
   cursor: pointer;
 }
-@media screen and (min-width: 600px) and (max-width: 1299px) {
+@media screen and (min-width: 1000px) {
   .logoContainer {
     width: 600px;
     height: 106px;
@@ -82,14 +82,14 @@ ul:hover li:hover ~ li:before {
     background-position-y: 45px;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1000px) {
   .logoContainer {
     width: 1405px;
     height: 106px;
   }
   .logo {
     background-size: 180px;
-    background-position-x: left;
+    background-position-x: right 90%;
     background-position-y: -40px;
     margin-left: 18px;
   }

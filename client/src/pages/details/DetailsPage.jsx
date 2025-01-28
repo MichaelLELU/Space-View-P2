@@ -32,7 +32,7 @@ export default function DetailsPage() {
               src={selectedObject.collection.items[0].links[0].href}
             />
           </div>
-            <button
+          <button
             type="button"
             onClick={handleBack}
             className={styles.BackButton}
