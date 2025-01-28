@@ -13,19 +13,21 @@ function App() {
   const [selectedImage, setSelectedImage] = useState();
   const [isOpen, setIsOpen] = useState(false);
   const switchClass = () => {
-      if (!isOpen) {
-        setIsOpen(true);
+    if (!isOpen) {
+      setIsOpen(true);
     }
   };
   const unSwitchClass = () => {
     setIsOpen(!isOpen);
-  }; 
+  };
   const resetOnClose = useCallback(() => {
     setSelectedImage();
-  },[]);
-  
+  }, []);
+
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_IMGDAY_URL}${import.meta.env.VITE_API_KEY}`)
+    fetch(
+      `${import.meta.env.VITE_API_IMGDAY_URL}${import.meta.env.VITE_API_KEY}`
+    )
       .then((response) => response.json())
       .then((data) => setImgDay(data))
       .catch((error) => console.error("Error", error));
@@ -53,9 +55,11 @@ function App() {
 
   return (
     <main className="mainBody">
-        <NavBar />
-        <ImgOfTheDay imgDay={imgDay} />
-      <div className={`backgroundImage ${isOpen ? "backgroundImage-active" : ""}`}>
+      <NavBar />
+      <ImgOfTheDay imgDay={imgDay} />
+      <div
+        className={`backgroundImage ${isOpen ? "backgroundImage-active" : ""}`}
+      >
         <div className="mainContainer">
           {nebulaImage && (
             <Category
@@ -81,10 +85,12 @@ function App() {
         </div>
         <div className="rightAside">
           {selectedImage && (
-            <ImgDetails className="itemDetails" 
-                        selectedImage={selectedImage}
-                        unSwitchClass={unSwitchClass}
-                        resetOnClose={resetOnClose} />
+            <ImgDetails
+              className="itemDetails"
+              selectedImage={selectedImage}
+              unSwitchClass={unSwitchClass}
+              resetOnClose={resetOnClose}
+            />
           )}
         </div>
       </div>

@@ -22,6 +22,7 @@
   -ms-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+  height: 100vh;
   box-shadow: 0 0 10px 1px #5548ee;
 }
 @media screen and (min-width: 600px) and (max-width: 1299px) {
