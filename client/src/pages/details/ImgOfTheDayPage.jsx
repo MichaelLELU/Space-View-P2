@@ -14,7 +14,7 @@ export default function ImgOfTheDayPage() {
       <div className={styles.detailMainContainer}>
         <NavBar />
         <h1>{imgDay.title}</h1>
-        <h2>{imgDay.date}</h2>
+        <p>{imgDay.date}</p>
         <div className={styles.imgContainer}>
           <img
             alt={imgDay.title}
@@ -22,15 +22,22 @@ export default function ImgOfTheDayPage() {
             src={imgDay.url.replaceAll(" ", "%20")}
           />
         </div>
-          <button
-            type="button"
-            onClick={handleBack}
-            className={styles.BackButton}
-          >
-            🔙
+        <button
+          type="button"
+          onClick={handleBack}
+          className={styles.BackButton}
+        >
+          🔙
+        </button>
+        <a
+          href={imgDay.hdurl.replaceAll(" ", "%20")}
+          target="_blank"
+          rel="noreferrer"
+          className={styles.button}
+        >
+          <button className={styles.btnImgOfTheday} type="button">
+            image HD
           </button>
-        <a href={imgDay.hdurl.replaceAll(" ", "%20")} target="_blank" rel="noreferrer" className={styles.button}>
-          <button className={styles.btnImgOfTheday} type="button">image HD</button>
         </a>
         <p className={styles.explanation}>{imgDay.explanation}</p>
       </div>
